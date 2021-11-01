@@ -15,7 +15,10 @@
     },
     "compilerOptions": {
         "strictNullChecks": true,
-        "target": "es2018",
+        // target es2017 is compatible with macOS 10.13
+        // once support for High Sierra is dropped this can be lifted
+        // (example: generators)
+        "target": "es2017",
         "lib": [
             "es2015"
         ],
